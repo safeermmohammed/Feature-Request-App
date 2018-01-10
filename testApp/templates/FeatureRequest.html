@@ -1,0 +1,49 @@
+<?xml encoding='UTF-8'?>
+<?xml encoding='EUC-JP'?>
+<!DOCTYPE html>
+   <head>
+   <title>Feature Request</title>
+</head>
+<body>
+    <h2 style="color:DodgerBlue;"align ="center">Feature Request</h2>
+<div>
+       <form>
+      <!-- This is called "view" of HTML markup that defines the appearance of UI -->
+            <table colspan="2" style="border:2px solid Tomato;" align ="center">
+                <tr>
+                    <td>Title:</td>
+                    <td><input data-bind = "value: title" /></td>
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td><textarea rows="3" data-bind="value: description"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Client</td>
+                    <td><select data-bind="options: ['Client A','Client B','Client C'],optionsCaption: '--select--',value: client,valueAllowUnset: true"></select></td>
+                </tr>
+                <tr>
+                    <td>Client Priority:</td>
+                    <td><select data-bind="options: ['1','2','3'],optionsCaption: '--select--',value: clientPriority,valueAllowUnset: true"></select></td>
+                </tr>
+                <tr>
+                    <td>Target date:</td>
+                    <td><input type="date" data-bind = "value: targetDate"/></td>
+                </tr>
+                <tr>
+                    <td>Product Area:</td>
+                    <td><select data-bind="options: ['Policies', 'Billing', 'Claims', 'Reports'],optionsCaption: '--select--',value: productArea,valueAllowUnset: true"></select></td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><button data-bind="click: submit">Submit</button></p>
+                    </td>
+                </tr>
+            </table>
+    </form>
+    <script src = "../static/js/jquery-1.6.3.min.js" type = "text/javascript"></script>
+    <script src = "../static/js/knockout-3.4.2.js" type = "text/javascript"></script>
+    <script src = "../static/js/model.js" type = "text/javascript"></script>
+   </body>
+
+</html>
