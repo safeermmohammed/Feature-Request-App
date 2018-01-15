@@ -19,7 +19,7 @@ class requestSubmit:
     def POST(self):
         # How to obtain the name key and then print the value?
         data = json.loads(web.data())
-        #insertTable()
+
         print data[1]
         #new = Feature(data['title'], data['description'],data['client'],data['client_priority'],data['target_date'],data['product_area'])
 
